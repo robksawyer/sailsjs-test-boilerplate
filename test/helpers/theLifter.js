@@ -83,7 +83,7 @@ var theLifter = {
             // Populate the DB
             barrels.populate(function(err) {
               cb(err, app);
-            });
+            }, false);
             
             lifted = true;
             sailsprocess = app;

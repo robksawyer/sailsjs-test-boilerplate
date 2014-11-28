@@ -22,7 +22,7 @@ module.exports = {
     },
     status: {
       type: 'string',
-      in: ['published', 'draft', 'banned'],
+      enum: ['published', 'draft', 'banned'],
       defaultsTo: ['published']
     },
     owner: {
