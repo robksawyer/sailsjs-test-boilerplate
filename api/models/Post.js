@@ -17,18 +17,16 @@ module.exports = {
     },
     category:{
       type: 'string',
-      in: [
-        'uncategorized', 'person', 'place', 'thing', 'other'
-      ],
-      defaultsTo: 'uncategorized'
+      enum: ['uncategorized', 'person', 'place', 'thing', 'other'],
+      defaultsTo: [0]
     },
     img: {
       type: 'json'
     },
     status: {
       type: 'string',
-      in: ['published', 'draft', 'banned'],
-      defaultsTo: ['published']
+      enum: ['published', 'draft', 'banned'],
+      defaultsTo: [0]
     },
     likes: {
       collection: 'like',
