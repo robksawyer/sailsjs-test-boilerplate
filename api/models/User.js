@@ -46,7 +46,7 @@ module.exports = {
     status: {
       type: 'string',
       enum: ['active', 'unconfirmed', 'banned'],
-      defaultsTo: [1]
+      defaultsTo: 'unconfirmed'
     },
     role: {
       type: 'string',

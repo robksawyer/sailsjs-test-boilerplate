@@ -23,7 +23,7 @@ module.exports = {
     status: {
       type: 'string',
       enum: ['published', 'draft', 'banned'],
-      defaultsTo: [0]
+      defaultsTo: 'published'
     },
     owner: {
       model: 'user'
